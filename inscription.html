@@ -3,21 +3,23 @@
 <head>
     <title>Inscription</title>
 </head>
-<body>
-    <h1>Inscription</h1>
-    <form id="inscriptionForm">
-        <label for="nomUtilisateur">Nom d'utilisateur :</label>
-        <input type="text" id="nomUtilisateur" required><br><br>
+<body style="background-color: brown;">
+    <div style="width: 50% ;margin: 0 auto; border-radius: 3px;">
+        <h1>Inscription</h1>
+        <form id="inscriptionForm">
+            <label for="nomUtilisateur">Nom d'utilisateur :</label>
+            <input type="text" id="nomUtilisateur" required><br><br>
         
-        <label for="motDePasse">Mot de passe :</label>
-        <input type="password" id="motDePasse" required><br><br>
+            <label for="motDePasse">Mot de passe :</label>
+            <input type="password" id="motDePasse" required><br><br>
 
-        <button type="submit">S'inscrire</button>
-    </form>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
 
 
     <div id="message"></div>
-    <button>Se connecter</button>
+    <button><a href="connexion.html">Se connecter</a></button>
 
     <script>
         document.getElementById("inscriptionForm").addEventListener("submit", function (e) {
