@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>Inscription</title>
+    <link rel="stylesheet" href="acceuil.css">
 </head>
-<body style="background-color: brown;">
-    <div style="width: 50% ;margin: 0 auto; border-radius: 3px;">
+<body >
+    <div class="formulaire">
         <h1>Inscription</h1>
         <form id="inscriptionForm">
             <label for="nomUtilisateur">Nom d'utilisateur :</label>
@@ -18,26 +19,26 @@
     </div>
 
 
-    <div id="message"></div>
+    <div id="message" style="display: flex; justify-content: center;"></div>
     <button><a href="connexion.html">Se connecter</a></button>
 
     <script>
-            document.getElementById("connexionForm").addEventListener("submit", function (e) 
-            {
-                e.preventDefault();
-                const nomUtilisateurConnexion = document.getElementById("nomUtilisateurConnexion").value;
-                const motDePasseConnexion = document.getElementById("motDePasseConnexion").value;
+            // document.getElementById("connexionForm").addEventListener("submit", function (e) 
+            // {
+            //     e.preventDefault();
+            //     const nomUtilisateurConnexion = document.getElementById("nomUtilisateurConnexion").value;
+            //     const motDePasseConnexion = document.getElementById("motDePasseConnexion").value;
 
             
-                const motDePasseStocke = localStorage.getItem(nomUtilisateurConnexion);
+            //     const motDePasseStocke = localStorage.getItem(nomUtilisateurConnexion);
 
-                if (motDePasseStocke === motDePasseConnexion) {
-                document.getElementById("message").innerText = "Connexion réussie !";
-                } else 
-                {
-                    document.getElementById("message").innerText = "Nom d'utilisateur ou mot de passe incorrect.";
-                }
-            });
+            //     if (motDePasseStocke === motDePasseConnexion) {
+            //     document.getElementById("message").innerText = "Connexion réussie !";
+            //     } else 
+            //     {
+            //         document.getElementById("message").innerText = "Nom d'utilisateur ou mot de passe incorrect.";
+            //     }
+            // });
 
             document.getElementById("inscriptionForm").addEventListener("submit", function (e) 
             {

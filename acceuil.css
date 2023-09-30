@@ -1,0 +1,13 @@
+*{
+    /* background-color: #0d75ec; */
+}
+
+.formulaire{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+}
+input{
+    display: inline-block;
+}

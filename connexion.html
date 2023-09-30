@@ -2,21 +2,23 @@
 <html>
 <head>
     <title>Connexion</title>
+    <link rel="stylesheet" href="acceuil.css">
 </head>
 <body>
+    <div class="formulaire">
+        <h1>Connexion</h1>
+        <form id="connexionForm">
+            <label for="nomUtilisateurConnexion">Nom d'utilisateur :</label>
+            <input type="text" id="nomUtilisateurConnexion" required><br><br>
+            
+            <label for="motDePasseConnexion">Mot de passe :</label>
+            <input type="password" id="motDePasseConnexion" required><br><br>
 
-    <h1>Connexion</h1>
-    <form id="connexionForm">
-        <label for="nomUtilisateurConnexion">Nom d'utilisateur :</label>
-        <input type="text" id="nomUtilisateurConnexion" required><br><br>
-        
-        <label for="motDePasseConnexion">Mot de passe :</label>
-        <input type="password" id="motDePasseConnexion" required><br><br>
-
-        <button type="submit">Se connecter</button>
-    </form>
-    <a href="task.html">acceuil</a>
-    <div id="message"></div>
+            <button type="submit"><a href="task.html">acceuil</a></button>
+        </form>
+    
+        <div id="message"></div>
+    </div>
 
     <script>
 
