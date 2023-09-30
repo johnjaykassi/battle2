@@ -5,6 +5,15 @@ submit.addEventListener("click", (e) => {
   const nationalite = document.querySelector("#nationalite").value;
   const specialite = document.querySelector("#specialite").value;
 
+  let supprimer = document.querySelector("delete");
+
+  for(let i=0; i<supprimer.length; i++)
+  {
+    supprimer[i].onclick = function(){
+        this.parentNode.remove();
+    }
+  }
+
   const table = document.querySelector("tbody");
 
   const allTr = table.querySelectorAll("tr");
@@ -24,4 +33,5 @@ submit.addEventListener("click", (e) => {
 
   table.innerHTML += info;
   console.log(table);
+  
 });

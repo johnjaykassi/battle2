@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connexion</title>
+</head>
+<body>
+
+    <h1>Connexion</h1>
+    <form id="connexionForm">
+        <label for="nomUtilisateurConnexion">Nom d'utilisateur :</label>
+        <input type="text" id="nomUtilisateurConnexion" required><br><br>
+        
+        <label for="motDePasseConnexion">Mot de passe :</label>
+        <input type="password" id="motDePasseConnexion" required><br><br>
+
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script>
+
+        document.getElementById("connexionForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const nomUtilisateurConnexion = document.getElementById("nomUtilisateurConnexion").value;
+            const motDePasseConnexion = document.getElementById("motDePasseConnexion").value;
+
+            
+            const motDePasseStocke = localStorage.getItem(nomUtilisateurConnexion);
+
+            if (motDePasseStocke === motDePasseConnexion) {
+                document.getElementById("message").innerText = "Connexion réussie !";
+            } else {
+                document.getElementById("message").innerText = "Nom d'utilisateur ou mot de passe incorrect.";
+            }
+        });
+    </script>
+</body>
+</html>
