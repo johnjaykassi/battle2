@@ -1,6 +1,10 @@
 *{
     /* background-color: #0d75ec; */
 }
+body{
+    background: #066acd;
+}
+
 
 .formulaire{
     width: 50%;
@@ -8,6 +12,12 @@
     border-radius: 10px;
     
 }
-input{
-    display: inline-block;
+
+form{
+    border: 2px solid rgb(255, 255, 255);
+    height: 15rem;
+    width: 28%;
+    margin: 180px auto;
+    padding: 10px;
+    border-radius: 10px;
 }
